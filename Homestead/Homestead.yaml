@@ -10,12 +10,12 @@ provider: virtualbox
 #    - ~/.ssh/id_rsa
 
 folders:
-    - map: ~/code
+    - map: ~/laravel_work/code
       to: /home/vagrant/code
 
 sites:
     - map: homestead.test
-      to: /home/vagrant/code/laravel_work/public
+      to: /home/vagrant/code/public
 
 databases:
     - homestead
