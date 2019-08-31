@@ -6,6 +6,7 @@
 こんにちは！
 @if (Auth::check())
     {{ \Auth::user()->name }}さん<br />
+    <a href="/bbs">掲示板</a><br />
     <a href="/auth/logout">ログアウト</a>
 @else
     ゲストさん<br />
