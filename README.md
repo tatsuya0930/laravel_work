@@ -14,7 +14,7 @@ https://www.vagrantup.com/downloads.html
 ・Homesteadのダウンロード  
 $ vagrant box add laravel/homestead  
   
-・リポジトリのクローン(ホームディレクトリでの使用を前提としています)
+・リポジトリのクローン(ホームディレクトリでの使用を前提としています)  
 $ cd ~  
 $ git clone https://github.com/tatsuya0930/laravel_work
 
