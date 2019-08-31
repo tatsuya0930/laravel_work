@@ -22,3 +22,6 @@ Route::post('auth/register', 'Auth\RegisterController@register');
 Route::get('auth/login', 'Auth\LoginController@showLoginForm');
 Route::post('auth/login', 'Auth\LoginController@login');
 Route::get('auth/logout', 'Auth\LoginController@logout');
+Route::get('bbs', 'PostsController@index')->name('top');
+Route::resource('posts', 'PostsController', ['only' => ['create', 'store', 'show', 'edit', 'update', 'destroy']]);
+Route::resource('comments', 'CommentsController', ['only' => ['store']]);
